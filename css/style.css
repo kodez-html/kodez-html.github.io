@@ -1,0 +1,219 @@
+/* ===================================================== */
+/* BASE STYLES — MOBILE FIRST                           */
+/* ===================================================== */
+
+:root {
+    --primary: #6da9e4;      /* soft pastel blue */
+    --secondary: #f2f4f7;    /* soft gray */
+    --dark: #333;
+    --light: #fff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: var(--secondary);
+    color: var(--dark);
+    line-height: 1.6;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* ===================================================== */
+/* LAYOUT HELPERS                                         */
+/* ===================================================== */
+
+.container {
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.section {
+    padding: 2rem 0;
+}
+
+/* ===================================================== */
+/* HEADER STYLES                                          */
+/* ===================================================== */
+
+.site-header {
+    background: var(--light);
+    padding: 1.5rem 0;
+    border-bottom: 3px solid var(--primary);
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.profile-photo {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid var(--primary);
+}
+
+.tagline {
+    font-size: 1.1rem;
+    color: var(--primary);
+}
+
+/* NAVIGATION */
+.main-nav {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: var(--dark);
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+}
+
+.main-nav a:hover {
+    background: var(--primary);
+    color: var(--light);
+}
+
+/* ===================================================== */
+/* SKILLS                                                 */
+/* ===================================================== */
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    list-style: none;
+    margin-top: 1rem;
+}
+
+.skills-list li {
+    background: var(--primary);
+    color: var(--light);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+}
+
+/* ===================================================== */
+/* PROJECTS                                               */
+/* ===================================================== */
+
+.projects-grid {
+    display: grid;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.project-card {
+    background: var(--light);
+    padding: 1rem;
+    border-radius: 10px;
+    border-left: 5px solid var(--primary);
+}
+
+.project-link {
+    display: inline-block;
+    margin-top: 0.5rem;
+    color: var(--primary);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.project-link:hover {
+    text-decoration: underline;
+}
+
+/* ===================================================== */
+/* CONTACT FORM                                           */
+/* ===================================================== */
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    margin-top: 1rem;
+}
+
+input, textarea {
+    padding: 0.75rem;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+}
+
+button {
+    padding: 0.75rem;
+    background: var(--primary);
+    border: none;
+    color: var(--light);
+    font-size: 1rem;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: #5897d8;
+}
+
+/* ===================================================== */
+/* FOOTER                                                 */
+/* ===================================================== */
+
+.site-footer {
+    text-align: center;
+    padding: 1.5rem 0;
+    margin-top: 2rem;
+    color: #555;
+}
+
+/* ===================================================== */
+/* TABLET — 600px                                         */
+/* ===================================================== */
+
+@media (min-width: 600px) {
+
+    .main-nav {
+        gap: 2rem;
+        font-size: 1.1rem;
+    }
+
+    .skills-list {
+        gap: 1rem;
+    }
+
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* ===================================================== */
+/* DESKTOP — 992px                                        */
+/* ===================================================== */
+
+@media (min-width: 992px) {
+
+    .header-content {
+        gap: 2rem;
+    }
+
+    .project-card {
+        padding: 1.5rem;
+    }
+
+    .main-nav {
+        font-size: 1.15rem;
+    }
+}

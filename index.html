@@ -1,0 +1,114 @@
+<!--
+Name: Kody Chang
+Course: CIS 130-W01 Web Design!
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Online resume for Kody Chang, Future Web Developer. Explore skills, projects, and contact information.">
+    <meta name="keywords" content="Kody Chang, Web Developer, HTML, CSS, JavaScript, Resume">
+    <meta name="author" content="Kody Chang">
+
+    <title>Kody Chang | Resume</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container header-content">
+            <img src="imgs/profile.jpg" alt="Profile photo of Kody Chang" class="profile-photo">
+            <div>
+                <h1>Kody Chang</h1>
+                <p class="tagline">Future Web Developer</p>
+            </div>
+        </div>
+
+        <nav class="main-nav">
+            <a href="#about">About Me</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="about" class="section container">
+            <h2>About Me</h2>
+            <p>
+                Hello! My name is <strong>Kody Chang</strong>. I am an upcoming web developer, looking to expand my
+                skills in HTML, CSS,
+                C# and many more. I like to work on old projects and revamp them with new skills I have learned. I am
+                currently a full-time student at Ozark Technical Community College, or OTCC for short. I also work
+                full-time at
+                a local car wash. Thank you for visiting my resume webpage!
+            </p>
+        </section>
+
+        <section id="skills" class="section container">
+            <h2>Skills</h2>
+            <ul class="skills-list">
+                <li>HTML5 </li>
+                <li>CSS </li>
+                <li>JavaScript </li>
+                <li>Git / GitHub </li>
+                <li>Scripting Programming </li>
+                <li>C# Programming </li>
+            </ul>
+        </section>
+
+        <section id="projects" class="section container">
+            <h2>Projects</h2>
+
+            <div class="projects-grid">
+
+                <article class="project-card">
+                    <h3>Funyon Project</h3>
+                    <p>This was a news website project. It was to show how the UI would look like for a mobile, with
+                    vertical scrolling. It contains overexaggerated news about the game industires and eating pie.</p>
+                    <a class="project-link" href="webprojects/funyon/" target="_blank">View Project</a>
+                </article>
+
+                <article class="project-card">
+                    <h3>Bait Shop Project </h3>
+                    <p>A multi-page fishing gear website with navigation and styling. It consist of a location, web player,
+                    and a selection of baits.</p>
+                    <a class="project-link" href="webprojects/baitshop/" target="_blank">View Project</a>
+                </article>
+
+            </div>
+        </section>
+
+        <section id="contact" class="section container">
+            <h2>Contact Me</h2>
+
+            <form class="contact-form">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="msg">Message</label>
+                <textarea id="msg" name="msg" rows="5" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <p>© 2025 Kody Chang</p>
+    </footer>
+
+</body>
+
+</html>
