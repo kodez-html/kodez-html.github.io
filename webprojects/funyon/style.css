@@ -1,0 +1,101 @@
+/* Base styles for small screens */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #f8c471;
+  padding: 1rem;
+  text-align: center;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+  margin: 0 0.5rem;
+}
+
+section {
+  padding: 1rem;
+  border-bottom: 1px solid #ccc;
+}
+
+section img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0.5rem 0;
+}
+
+footer {
+  text-align: center;
+  background-color: #f2f2f2;
+  padding: 1rem;
+}
+
+/* Breakpoint 1: @576px — e.g. reposition nav and image sizes */
+@media (min-width: 576px) {
+  nav {
+    text-align: left;
+    padding-left: 1rem;
+  }
+
+  section img {
+    float: left;
+    width: 50%;
+    margin-right: 1rem;
+  }
+
+  section p {
+    overflow: hidden;
+  }
+}
+
+/* Breakpoint 2: @720px — e.g. side-by-side stories */
+@media (min-width: 720px) {
+  main {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  section {
+    width: 48%;
+    float: left;
+    margin: 1%;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+  }
+
+  section img {
+    width: 100%;
+    float: none;
+    margin: 0 0 0.5rem 0;
+  }
+}
+
+/* Breakpoint 3: @992px — e.g. add background, hide footer */
+@media (min-width: 992px) {
+  body {
+    background-color: #fef9e7;
+  }
+
+  header {
+    display: block;
+    background-color: #f39c12;
+  }
+
+  footer {
+    display: none;
+  }
+
+  h2 {
+    font-size: 1.75rem;
+  }
+}
+
